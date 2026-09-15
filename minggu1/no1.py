@@ -33,6 +33,6 @@ total_emas = 40 + emasB * 2
 total_perak = 30 + perakB * 1
 total_perunggu = 20 + perungguB * 1
 
-print(f"Emas     : Total={total_emas} | a. Penukaran={emasB}x | b. Sisa={sisa_emas}")
-print(f"Perak    : Total={total_perak} | a. Penukaran={perakB}x | b. Sisa={sisa_perak}")
-print(f"Perunggu : Total={total_perunggu} | a. Penukaran={perungguB}x | b. Sisa={sisa_perunggu}")
+print(f"Emas     : Total={total_emas}, Penukaran={emasB}x , Sisa={sisa_emas}")
+print(f"Perak    : Total={total_perak}, Penukaran={perakB}x , Sisa={sisa_perak}")
+print(f"Perunggu : Total={total_perunggu}, Penukaran={perungguB}x , Sisa={sisa_perunggu}")
