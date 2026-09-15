@@ -1,18 +1,26 @@
-def kupon(emas=0,perak=0,perunggu=0):
+emasB=0
+perakB=0
+perungguB=0
+def kupon(emas,perak,perunggu):
+    global emasB,perakB,perungguB
+    if emas >=4:
+        emasB+=1
+    if perak >=3:
+        perakB+=1
+    if perunggu >=2:
+        perungguB+=1
     if emas < 4:
-        return emas
+        return 
     if perak < 3:
-        return perunggu
+        return 
     if perunggu < 2:
-        return perunggu
+        return 
+    
     emas-=4
     perak-=3
     perunggu-=2
-    
-    emasB=1+kupon(emas+2)
-    perakB=1+kupon(perak+1)
-    perungguB=1+kupon(perunggu+1)
 
-    return f"Emas: {emasB}, Perak: {perakB}, Perunggu: {perungguB}"
+    return  kupon(emas+2,perak+1,perunggu+1)
 
 print(kupon(40,30,20))
+print(emasB,perakB,perungguB)
